@@ -14,7 +14,9 @@ public class HabitDbHelper extends SQLiteOpenHelper {
 
     public static final String LOG_TAG = HabitDbHelper.class.getSimpleName();
 
-    /** Name of the database file */
+    /**
+     * Name of the database file
+     */
     private static final String DATABASE_NAME = "habits.db";
 
     /**
@@ -110,7 +112,7 @@ public class HabitDbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         // Create a String that contains the SQL statement to create the habit table
-        String SQL_CREATE_HABITS_TABLE =  "CREATE TABLE " + TABLE_NAME + " ("
+        String SQL_CREATE_HABITS_TABLE = "CREATE TABLE " + TABLE_NAME + " ("
                 + HabitEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + HabitEntry.COLUMN_HABIT + " TEXT NOT NULL, "
                 + HabitEntry.COLUMN_COUNT + " INTEGER NOT NULL DEFAULT 0, "

@@ -6,7 +6,8 @@ public final class HabitContract {
 
     // To prevent someone from accidentally instantiating the contract class,
     // give it an empty constructor.
-    private HabitContract() {}
+    private HabitContract() {
+    }
 
     public static final class HabitEntry implements BaseColumns {
         // Column names
